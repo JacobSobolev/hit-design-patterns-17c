@@ -1,0 +1,14 @@
+F:\Bitbucket\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\bin\Debug\AppLogic.dll
+F:\Bitbucket\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\bin\Debug\AppLogic.pdb
+F:\Bitbucket\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\obj\Debug\AppLogic.csprojResolveAssemblyReference.cache
+F:\Bitbucket\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\obj\Debug\AppLogic.csproj.CoreCompileInputs.cache
+F:\Bitbucket\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\obj\Debug\AppLogic.dll
+F:\Bitbucket\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\obj\Debug\AppLogic.pdb
+C:\Users\user\Documents\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\bin\Debug\AppLogic.dll
+C:\Users\user\Documents\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\bin\Debug\AppLogic.pdb
+C:\Users\user\Documents\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\bin\Debug\Facebook.dll
+C:\Users\user\Documents\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\user\Documents\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\obj\Debug\AppLogic.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\obj\Debug\AppLogic.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\obj\Debug\AppLogic.dll
+C:\Users\user\Documents\hit-design-patterns-17c\C17 Ex03 JacobSobolev\AppLogic\obj\Debug\AppLogic.pdb

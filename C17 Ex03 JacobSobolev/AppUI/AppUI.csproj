@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA0BA730-02CD-4DEE-A68E-BC12733B4417}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AppUI</RootNamespace>
+    <AssemblyName>FacebookAplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\DS\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper, Version=6.8.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\DS\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppService.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewItemComparer.cs" />
+    <Compile Include="SmartUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLogin.Designer.cs">
+      <DependentUpon>UserControlLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMain.Designer.cs">
+      <DependentUpon>UserControlMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlBasicActions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBasicActions.Designer.cs">
+      <DependentUpon>UserControlBasicActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlPostsActions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPostsActions.Designer.cs">
+      <DependentUpon>UserControlPostsActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlPagesTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPagesTable.Designer.cs">
+      <DependentUpon>UserControlPagesTable.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLogin.resx">
+      <DependentUpon>UserControlLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMain.resx">
+      <DependentUpon>UserControlMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBasicActions.resx">
+      <DependentUpon>UserControlBasicActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPostsActions.resx">
+      <DependentUpon>UserControlPostsActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPagesTable.resx">
+      <DependentUpon>UserControlPagesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FacebookWrapper.ObjectModel.PostedItem.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbLoginHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbLoginNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbLogoutHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbLogoutNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbGradiant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppLogic\AppLogic.csproj">
+      <Project>{6a9186e0-b055-463b-bd5f-5c6bc2a3e7e0}</Project>
+      <Name>AppLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

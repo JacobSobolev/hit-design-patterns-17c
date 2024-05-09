@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace AppUI
+{
+    public partial class FormMain : Form
+    {
+        public FormMain()
+        {
+            InitializeComponent();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            userControlMain.VisibleChanged += new System.EventHandler(this.userControlVisableChanged);
+            userControlLogin.VisibleChanged += new System.EventHandler(this.userControlVisableChanged);
+            userControlLogin.AddCallbackToEvents();
+            userControlMain.AddCallbackToEvents();
+        }
+
+        private void userControlVisableChanged(object sender, EventArgs e)
+        {
+            if (sender is UserControlLogin && userControlLogin.Visible == false)
+            {
+                userControlMain.Visible = true;
+            }
+            else if (sender is UserControlMain && userControlLogin.Visible == false)
+            {
+                userControlLogin.Visible = true;
+            }
+        }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            AppService.Instance.AppSettingsSave();
+        }
+    }
+}

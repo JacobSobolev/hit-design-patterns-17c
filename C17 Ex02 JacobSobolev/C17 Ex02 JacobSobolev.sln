@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1422A97E-C497-48D4-8474-2362C901D162}"
+	ProjectSection(SolutionItems) = preProject
+		C17 Ex02 JacobSobolev.docx = C17 Ex02 JacobSobolev.docx
+		Exercise Checking Report.txt = Exercise Checking Report.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLogic", "AppLogic\AppLogic.csproj", "{6A9186E0-B055-463B-BD5F-5C6BC2A3E7E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppUI", "AppUI\AppUI.csproj", "{CA0BA730-02CD-4DEE-A68E-BC12733B4417}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A9186E0-B055-463B-BD5F-5C6BC2A3E7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9186E0-B055-463B-BD5F-5C6BC2A3E7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9186E0-B055-463B-BD5F-5C6BC2A3E7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9186E0-B055-463B-BD5F-5C6BC2A3E7E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0BA730-02CD-4DEE-A68E-BC12733B4417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0BA730-02CD-4DEE-A68E-BC12733B4417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0BA730-02CD-4DEE-A68E-BC12733B4417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0BA730-02CD-4DEE-A68E-BC12733B4417}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CED3AB34-184F-442E-A33A-F7F0B650E977}
+	EndGlobalSection
+EndGlobal
